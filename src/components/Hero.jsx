@@ -114,9 +114,9 @@ export default function Hero() {
             <div className="w-full max-w-sm bg-[#FFFFFF] border border-[#E5E5E3] rounded-md p-3 shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-[4/5] overflow-hidden rounded bg-[#F7F7F5] border border-[#EDEDEB] relative flex items-center justify-center">
                 <img
-                  src="/profile_placeholder.svg"
-                  alt="Srujan R B Profile Card"
-                  className="w-full h-full object-cover"
+                  src={PERSONAL_INFO.avatar}
+                  alt={`${PERSONAL_INFO.name} — Software Developer`}
+                  className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-300"
                 />
               </div>
               <div className="pt-3 px-1 flex items-center justify-between text-xs text-[#777777]">

@@ -7,6 +7,7 @@ export const PERSONAL_INFO = {
   degree: "B.Tech Computer Science Engineering",
   educationPeriod: "August 2023 – June 2027",
   location: "India",
+  avatar: "/assets/profile/srujan_rb_profile.jpg",
   heroHeadline: "Building software with intent, craft, and practical utility.",
   heroIntroduction: "I'm Srujan, a Computer Science undergraduate at IIITDM Kancheepuram. I enjoy building intelligent software systems, full-stack applications, and practical engineering solutions. My interests span AI, backend development, machine learning, and scalable application design.",
   aboutParagraphs: [
