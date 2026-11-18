@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-warm: #F7F7F5;
+    --bg-card: #FFFFFF;
+    --text-main: #171717;
+    --text-muted: #666666;
+    --text-subtle: #8A8A88;
+    --border-line: #E5E5E3;
+    --border-subtle: #EDEDEB;
+    --accent-olive: #4A5548;
+    --accent-blue: #2B4C7E;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-warm);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-warm);
+    color: var(--text-main);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: #171717;
+    color: #F7F7F5;
+  }
+}
+
+/* Minimal Editorial Layout Utilities */
+.container-editorial {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+  padding-right: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Clean Button Styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #171717;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 4px;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #2E2E2E;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: #171717;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 4px;
+  border: 1px solid #E5E5E3;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #F0F0EE;
+  border-color: #D1D1CE;
+  transform: translateY(-1px);
+}
+

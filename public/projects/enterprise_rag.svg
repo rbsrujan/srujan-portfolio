@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F7F7F5"/>
+  <rect x="20" y="20" width="760" height="460" rx="8" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1.5"/>
+  
+  <rect x="20" y="20" width="760" height="44" rx="8" fill="#F0F0EE"/>
+  <circle cx="45" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="62" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="79" cy="42" r="5" fill="#D1D1CE"/>
+  <text x="100" y="46" font-family="sans-serif" font-size="11" fill="#777777">enterprise-conversational-rag &bull; LangChain + ChromaDB + Groq Llama-3</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="64" width="200" height="416" fill="#FAFAF9" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="36" y="96" font-family="sans-serif" font-size="12" font-weight="700" fill="#171717">Indexed Knowledge Bases</text>
+  <rect x="36" y="112" width="168" height="34" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+  <text x="46" y="133" font-family="sans-serif" font-size="11" fill="#171717">📄 attention_is_all_you_need.pdf</text>
+  <rect x="36" y="156" width="168" height="34" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+  <text x="46" y="177" font-family="sans-serif" font-size="11" fill="#171717">📄 llama3_tech_report.pdf</text>
+
+  <text x="36" y="225" font-family="sans-serif" font-size="11" font-weight="600" fill="#777777">VECTOR RETRIEVER</text>
+  <text x="36" y="245" font-family="sans-serif" font-size="11" fill="#171717">ChromaDB Top-K = 4</text>
+  <text x="36" y="265" font-family="sans-serif" font-size="11" fill="#171717">Contextual Query Rewriter</text>
+
+  <!-- Main Chat Flow -->
+  <g transform="translate(240, 85)">
+    <!-- User Message -->
+    <rect x="180" y="10" width="340" height="50" rx="8" fill="#F0F0EE"/>
+    <text x="195" y="32" font-family="sans-serif" font-size="12" fill="#171717">How does multi-head attention scale compared</text>
+    <text x="195" y="48" font-family="sans-serif" font-size="12" fill="#171717">to standard recurrent models?</text>
+
+    <!-- Query Rewriting Trace -->
+    <rect x="0" y="75" width="520" height="32" rx="4" fill="#FAFAF9" stroke="#E5E5E3"/>
+    <text x="15" y="95" font-family="sans-serif" font-size="10" fill="#555555">🔍 History-Aware Reformulated Query: "Transformer multi-head attention computational complexity vs RNN"</text>
+
+    <!-- AI Response with Citation -->
+    <rect x="0" y="120" width="520" height="150" rx="8" fill="#FFFFFF" stroke="#E5E5E3"/>
+    <text x="18" y="145" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">Groq Llama-3-8b Assistant:</text>
+    <text x="18" y="170" font-family="sans-serif" font-size="11" fill="#333333" line-height="1.5">
+      Multi-head attention allows the model to jointly attend to information from different
+    </text>
+    <text x="18" y="188" font-family="sans-serif" font-size="11" fill="#333333">
+      representation subspaces at different positions. In recurrent models, sequential computation
+    </text>
+    <text x="18" y="206" font-family="sans-serif" font-size="11" fill="#333333">
+      requires O(n) sequential operations, whereas self-attention reduces this to O(1) sequential steps.
+    </text>
+
+    <!-- Citation Box -->
+    <rect x="18" y="222" width="480" height="34" rx="4" fill="#F7F7F5" stroke="#E5E5E3"/>
+    <text x="30" y="243" font-family="sans-serif" font-size="10" fill="#4A5548">📚 Verified Source Citation: attention_is_all_you_need.pdf &bull; Section 3.2, Page 4 (Chunk #18)</text>
+
+    <!-- Input Bar -->
+    <rect x="0" y="290" width="520" height="42" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+    <text x="18" y="316" font-family="sans-serif" font-size="12" fill="#999999">Ask a follow-up question across uploaded documents...</text>
+  </g>
+</svg>
+

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F7F7F5"/>
+  <rect x="20" y="20" width="760" height="460" rx="8" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1.5"/>
+  
+  <rect x="20" y="20" width="760" height="44" rx="8" fill="#F0F0EE"/>
+  <circle cx="45" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="62" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="79" cy="42" r="5" fill="#D1D1CE"/>
+  <text x="100" y="46" font-family="sans-serif" font-size="11" fill="#777777">autonomous-text2sql-agent &bull; ReAct Agent &bull; SQLite/MySQL &bull; LangChain</text>
+
+  <g transform="translate(45, 85)">
+    <!-- Natural Language Question -->
+    <rect width="710" height="50" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+    <text x="20" y="22" font-family="sans-serif" font-size="10" fill="#777777">NATURAL LANGUAGE QUERY</text>
+    <text x="20" y="40" font-family="sans-serif" font-size="13" font-weight="600" fill="#171717">"Show the top 5 departments with the highest average student attendance this semester."</text>
+
+    <!-- ReAct Agent Trace Box -->
+    <rect y="65" width="710" height="150" rx="6" fill="#1E1E1E"/>
+    <text x="20" y="90" font-family="'Courier New', monospace" font-size="11" fill="#9CDCFE">Agent Loop &bull; ReAct Execution Pattern</text>
+    
+    <text x="20" y="112" font-family="'Courier New', monospace" font-size="11" fill="#6A9955"># Thought 1: Need to inspect database schema to locate department and attendance tables.</text>
+    <text x="20" y="130" font-family="'Courier New', monospace" font-size="11" fill="#DCDCAA">Action: list_tables_sql_db()</text>
+    <text x="20" y="148" font-family="'Courier New', monospace" font-size="11" fill="#CE9178">Observation: ['STUDENT', 'DEPARTMENT', 'ATTENDANCE_RECORD']</text>
+    
+    <text x="20" y="172" font-family="'Courier New', monospace" font-size="11" fill="#6A9955"># Thought 2: Join DEPARTMENT and ATTENDANCE_RECORD on dept_id, group by dept_name, order desc limit 5.</text>
+    <text x="20" y="190" font-family="'Courier New', monospace" font-size="11" fill="#4EC9B0">SELECT d.dept_name, ROUND(AVG(a.attendance_pct), 2) AS avg_att FROM DEPARTMENT d JOIN ... LIMIT 5;</text>
+
+    <!-- Query Output Table -->
+    <rect y="230" width="710" height="120" rx="6" fill="#FFFFFF" stroke="#E5E5E3"/>
+    <rect y="230" width="710" height="28" fill="#F7F7F5" rx="6 6 0 0"/>
+    <text x="20" y="249" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">DEPARTMENT NAME</text>
+    <text x="320" y="249" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">STUDENT COUNT</text>
+    <text x="540" y="249" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">AVG ATTENDANCE</text>
+
+    <line x1="0" y1="285" x2="710" y2="285" stroke="#EBEBEA"/>
+    <text x="20" y="275" font-family="sans-serif" font-size="12" fill="#171717">Computer Science and Engineering</text>
+    <text x="320" y="275" font-family="sans-serif" font-size="12" fill="#666666">184 Students</text>
+    <text x="540" y="275" font-family="sans-serif" font-size="12" font-weight="600" fill="#15803D">94.8%</text>
+
+    <text x="20" y="315" font-family="sans-serif" font-size="12" fill="#171717">Electronics and Communication Engineering</text>
+    <text x="320" y="315" font-family="sans-serif" font-size="12" fill="#666666">162 Students</text>
+    <text x="540" y="315" font-family="sans-serif" font-size="12" font-weight="600" fill="#15803D">92.3%</text>
+  </g>
+</svg>
+

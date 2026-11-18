@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="finBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e12"/>
+      <stop offset="50%" stop-color="#141923"/>
+      <stop offset="100%" stop-color="#090b0e"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#finBg)"/>
+
+  <!-- Trading Terminal Canvas Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="650" x2="1200" y2="650"/>
+    <line x1="250" y1="0" x2="250" y2="750"/>
+    <line x1="500" y1="0" x2="500" y2="750"/>
+    <line x1="750" y1="0" x2="750" y2="750"/>
+    <line x1="1000" y1="0" x2="1000" y2="750"/>
+  </g>
+
+  <!-- Interactive Candlestick / Depth Volume Graphic -->
+  <g transform="translate(100, 150)">
+    <!-- Orderbook depth curves -->
+    <path d="M0,350 L100,340 L180,310 L260,280 L350,220 L400,120 L420,0 L420,400 L0,400 Z" fill="#10b981" fill-opacity="0.12"/>
+    <path d="M0,350 L100,340 L180,310 L260,280 L350,220 L400,120 L420,0" fill="none" stroke="#10b981" stroke-width="2.5"/>
+
+    <path d="M480,0 L500,140 L580,240 L680,290 L780,330 L900,360 L1000,380 L1000,400 L480,400 Z" fill="#ef4444" fill-opacity="0.12"/>
+    <path d="M480,0 L500,140 L580,240 L680,290 L780,330 L900,360 L1000,380" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+
+    <!-- High-frequency Price Trend Ribbon -->
+    <path d="M50,200 Q200,80 350,250 T650,140 T950,90" fill="none" stroke="#f59e0b" stroke-width="3" filter="drop-shadow(0 0 8px rgba(245,158,11,0.6))"/>
+  </g>
+
+  <!-- Centered Glass Card HUD -->
+  <g transform="translate(420, 240)">
+    <rect width="360" height="230" rx="20" fill="#131b26" fill-opacity="0.85" stroke="#334155" stroke-width="1.5"/>
+    <text x="30" y="45" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">TICK-TO-TRADE TIME</text>
+    <text x="30" y="95" fill="#ffffff" font-family="'Syne', sans-serif" font-size="38" font-weight="800">410 ns</text>
+    <text x="30" y="130" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13">FPGA Kernel + DPDK Ring Buffer</text>
+    
+    <g transform="translate(30, 160)">
+      <rect width="90" height="36" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+      <text x="45" y="23" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">+14.8M ops/s</text>
+
+      <rect x="105" y="0" width="105" height="36" rx="8" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1"/>
+      <text x="157" y="23" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">L3 Cache 0% Miss</text>
+    </g>
+  </g>
+</svg>
+

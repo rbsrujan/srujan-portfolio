@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%" height="100%">
+  <rect width="900" height="560" fill="#F7F7F5"/>
+  <rect x="20" y="20" width="860" height="520" rx="8" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <rect x="20" y="20" width="860" height="42" rx="8" fill="#F0F0EE"/>
+  <circle cx="45" cy="41" r="5" fill="#D1D1CE"/>
+  <circle cx="62" cy="41" r="5" fill="#D1D1CE"/>
+  <circle cx="79" cy="41" r="5" fill="#D1D1CE"/>
+  <rect x="110" y="31" width="400" height="20" rx="4" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="125" y="45" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#777777">nexstore-intelligence.internal/dashboard &bull; FastAPI (p95 &lt; 180ms)</text>
+
+  <!-- Top Title & KPI Row -->
+  <g transform="translate(45, 80)">
+    <div style="display:flex; justify-content:space-between;">
+      <text x="0" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#171717">NexStore AI — Autonomous Multi-Agent Operations</text>
+      <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#666666">Ensemble Forecasting &bull; Dynamic Margin Safeguards &bull; Hybrid Semantic Vector Search</text>
+    </div>
+
+    <!-- 4 Autonomous Agents Status Grid -->
+    <g transform="translate(0, 50)">
+      <!-- Agent 1: Dynamic Pricing -->
+      <rect width="190" height="64" rx="4" fill="#FAFAF9" stroke="#E5E5E3"/>
+      <circle cx="16" cy="22" r="4" fill="#15803D"/>
+      <text x="28" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#171717">1. Pricing Agent</text>
+      <text x="16" y="40" font-family="sans-serif" font-size="10" fill="#555555">Amazon/Flipkart parity scrapers</text>
+      <text x="16" y="54" font-family="sans-serif" font-size="10" font-weight="600" fill="#2563EB">Floor: Cost + 5% Guardrail</text>
+
+      <!-- Agent 2: Demand Forecasting -->
+      <g transform="translate(205, 0)">
+        <rect width="195" height="64" rx="4" fill="#FAFAF9" stroke="#E5E5E3"/>
+        <circle cx="16" cy="22" r="4" fill="#15803D"/>
+        <text x="28" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#171717">2. Forecasting Agent</text>
+        <text x="16" y="40" font-family="sans-serif" font-size="10" fill="#555555">Prophet + LSTM Neural Network</text>
+        <text x="16" y="54" font-family="sans-serif" font-size="10" font-weight="600" fill="#15803D">92.4% Val Accuracy (30-day)</text>
+      </g>
+
+      <!-- Agent 3: Vector Search & Recs -->
+      <g transform="translate(415, 0)">
+        <rect width="195" height="64" rx="4" fill="#FAFAF9" stroke="#E5E5E3"/>
+        <circle cx="16" cy="22" r="4" fill="#15803D"/>
+        <text x="28" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#171717">3. Search &amp; Recs Agent</text>
+        <text x="16" y="40" font-family="sans-serif" font-size="10" fill="#555555">TF-IDF + Cosine Similarity</text>
+        <text x="16" y="54" font-family="sans-serif" font-size="10" font-weight="600" fill="#7C3AED">9X Search Conversion Lift</text>
+      </g>
+
+      <!-- Agent 4: Chatbot Assistant -->
+      <g transform="translate(625, 0)">
+        <rect width="185" height="64" rx="4" fill="#FAFAF9" stroke="#E5E5E3"/>
+        <circle cx="16" cy="22" r="4" fill="#15803D"/>
+        <text x="28" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#171717">4. Multi-Intent Bot</text>
+        <text x="16" y="40" font-family="sans-serif" font-size="10" fill="#555555">Ollama Local (Gemma / LLaMA)</text>
+        <text x="16" y="54" font-family="sans-serif" font-size="10" font-weight="600" fill="#4A5548">Groq Fallback + CSV Audits</text>
+      </g>
+    </g>
+
+    <!-- Mid Section: Analytics & Restock PO Trigger -->
+    <g transform="translate(0, 130)">
+      <!-- Left Chart: Pricing & Elasticity Curve -->
+      <rect width="490" height="220" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+      <text x="20" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#171717">Dynamic Pricing Optimization vs Market Parity</text>
+      <text x="20" y="42" font-family="sans-serif" font-size="10" fill="#777777">Price elasticity coefficient calculation across demand shifts</text>
+
+      <!-- Chart axes -->
+      <line x1="45" y1="65" x2="45" y2="185" stroke="#E0E0DE" stroke-width="1"/>
+      <line x1="45" y1="185" x2="455" y2="185" stroke="#E0E0DE" stroke-width="1"/>
+
+      <!-- Competitor baseline curve (grey dotted) -->
+      <path d="M55,145 Q150,120 250,135 T440,95" fill="none" stroke="#A8A8A4" stroke-width="2" stroke-dasharray="4 4"/>
+      <!-- NexStore optimal price curve (blue solid) -->
+      <path d="M55,160 Q150,100 250,118 T440,78" fill="none" stroke="#2563EB" stroke-width="2.5"/>
+      <!-- Margin Floor Line (Cost + 5%) -->
+      <line x1="45" y1="165" x2="455" y2="165" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="2 2"/>
+      <text x="320" y="160" font-family="sans-serif" font-size="9" fill="#DC2626">Margin Floor (Cost + 5%)</text>
+
+      <text x="60" y="202" font-family="sans-serif" font-size="10" fill="#777777">Day 01</text>
+      <text x="180" y="202" font-family="sans-serif" font-size="10" fill="#777777">Day 10</text>
+      <text x="300" y="202" font-family="sans-serif" font-size="10" fill="#777777">Day 20</text>
+      <text x="410" y="202" font-family="sans-serif" font-size="10" fill="#777777">Day 30</text>
+
+      <!-- Legend -->
+      <rect x="290" y="12" width="180" height="22" rx="3" fill="#FFFFFF" stroke="#E5E5E3"/>
+      <circle cx="302" cy="23" r="3" fill="#2563EB"/>
+      <text x="310" y="26" font-family="sans-serif" font-size="9" fill="#171717">NexStore Optimal</text>
+      <circle cx="395" cy="23" r="3" fill="#A8A8A4"/>
+      <text x="403" y="26" font-family="sans-serif" font-size="9" fill="#777777">Competitors</text>
+    </g>
+
+    <!-- Right Panel: Inventory & Restock PO Triggers -->
+    <g transform="translate(510, 130)">
+      <rect width="300" height="220" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+      <text x="18" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#171717">Automated Purchase Orders</text>
+      <text x="18" y="42" font-family="sans-serif" font-size="10" fill="#777777">Prophet &amp; LSTM 30d forecast triggers</text>
+
+      <!-- PO Item 1 -->
+      <rect x="18" y="58" width="264" height="46" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+      <text x="28" y="76" font-family="sans-serif" font-size="11" font-weight="600" fill="#171717">SKU-88241 &bull; Active Noise Audio</text>
+      <text x="28" y="93" font-family="sans-serif" font-size="10" fill="#B45309">⚠️ Stockout in 5 days &bull; Auto PO #9021 Issued</text>
+
+      <!-- PO Item 2 -->
+      <rect x="18" y="112" width="264" height="46" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+      <text x="28" y="130" font-family="sans-serif" font-size="11" font-weight="600" fill="#171717">SKU-49102 &bull; Ergonomic Keyboards</text>
+      <text x="28" y="147" font-family="sans-serif" font-size="10" fill="#15803D">✓ Healthy buffer (24 days) &bull; Re-evaluate Day 22</text>
+
+      <!-- PO Item 3 -->
+      <rect x="18" y="166" width="264" height="44" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+      <text x="28" y="184" font-family="sans-serif" font-size="11" font-weight="600" fill="#171717">SKU-31055 &bull; Thunderbolt Docks</text>
+      <text x="28" y="200" font-family="sans-serif" font-size="10" fill="#15803D">✓ Healthy buffer (19 days) &bull; Elastic demand steady</text>
+    </g>
+
+    <!-- Bottom Projected Impact Banner -->
+    <g transform="translate(0, 365)">
+      <rect width="810" height="48" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+      <text x="20" y="30" font-family="sans-serif" font-size="11" font-weight="600" fill="#171717">PROJECTED BUSINESS IMPACT:</text>
+      <text x="210" y="30" font-family="sans-serif" font-size="11" fill="#15803D">📈 25–35% Projected Gross Revenue Lift</text>
+      <text x="500" y="30" font-family="sans-serif" font-size="11" fill="#2563EB">📉 18% Projected Holding Cost Reduction</text>
+    </g>
+  </g>
+</svg>

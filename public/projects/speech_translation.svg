@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F7F7F5"/>
+  <rect x="20" y="20" width="760" height="460" rx="8" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1.5"/>
+  
+  <rect x="20" y="20" width="760" height="44" rx="8" fill="#F0F0EE"/>
+  <circle cx="45" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="62" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="79" cy="42" r="5" fill="#D1D1CE"/>
+  <text x="100" y="46" font-family="sans-serif" font-size="11" fill="#777777">Offline Hindi-Tamil Speech Translation for Edge &bull; ONNX / Piper TTS / faster-whisper</text>
+
+  <g transform="translate(45, 85)">
+    <text x="0" y="20" font-family="sans-serif" font-size="16" font-weight="700" fill="#171717">Local Edge Speech-to-Speech Architecture</text>
+    <text x="0" y="38" font-family="sans-serif" font-size="12" fill="#666666">100% On-device execution &bull; No internet / cloud API latency</text>
+
+    <!-- 3 Stage Pipeline -->
+    <g transform="translate(0, 60)">
+      <!-- Step 1: Hindi Voice -->
+      <rect width="215" height="150" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+      <rect x="16" y="16" width="32" height="32" rx="16" fill="#171717"/>
+      <text x="26" y="37" font-family="sans-serif" font-size="14" fill="#FFFFFF">1</text>
+      <text x="56" y="28" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">Hindi Voice Input</text>
+      <text x="56" y="44" font-family="sans-serif" font-size="10" fill="#777777">faster-whisper ASR</text>
+
+      <path d="M25,85 Q40,65 55,85 T85,85 T115,85 T145,85 T175,85" fill="none" stroke="#2563EB" stroke-width="2"/>
+      <rect x="16" y="105" width="183" height="30" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+      <text x="26" y="124" font-family="sans-serif" font-size="11" fill="#171717">"नमस्ते, आप कैसे हैं?"</text>
+
+      <!-- Step 2: IndicTrans2 Translation -->
+      <g transform="translate(245, 0)">
+        <rect width="215" height="150" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+        <rect x="16" y="16" width="32" height="32" rx="16" fill="#171717"/>
+        <text x="26" y="37" font-family="sans-serif" font-size="14" fill="#FFFFFF">2</text>
+        <text x="56" y="28" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">Machine Translation</text>
+        <text x="56" y="44" font-family="sans-serif" font-size="10" fill="#777777">IndicTrans2 (AI4Bharat)</text>
+
+        <text x="20" y="80" font-family="sans-serif" font-size="10" fill="#555555">&bull; 1B Parameter Indic Model</text>
+        <text x="20" y="98" font-family="sans-serif" font-size="10" fill="#555555">&bull; IndicNLP Transliteration</text>
+        
+        <rect x="16" y="105" width="183" height="30" rx="4" fill="#FFFFFF" stroke="#E5E5E3"/>
+        <text x="26" y="124" font-family="sans-serif" font-size="11" fill="#171717">"வணக்கம், நீங்கள் எப்படி..."</text>
+      </g>
+
+      <!-- Step 3: Piper Tamil TTS -->
+      <g transform="translate(490, 0)">
+        <rect width="220" height="150" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+        <rect x="16" y="16" width="32" height="32" rx="16" fill="#171717"/>
+        <text x="26" y="37" font-family="sans-serif" font-size="14" fill="#FFFFFF">3</text>
+        <text x="56" y="28" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">Tamil Voice Synthesis</text>
+        <text x="56" y="44" font-family="sans-serif" font-size="10" fill="#777777">Piper TTS (ONNX Runtime)</text>
+
+        <text x="20" y="80" font-family="sans-serif" font-size="10" fill="#555555">&bull; ta_IN-Valluvar-medium.onnx</text>
+        <text x="20" y="98" font-family="sans-serif" font-size="10" fill="#15803D">&bull; Low CPU memory footprint</text>
+
+        <path d="M25,120 Q40,105 55,120 T85,120 T115,120 T145,120 T175,120" fill="none" stroke="#15803D" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Edge Performance Benchmarks -->
+    <g transform="translate(0, 230)">
+      <rect width="710" height="95" rx="6" fill="#FAFAF9" stroke="#E5E5E3"/>
+      <text x="20" y="28" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">Hardware &amp; Latency Benchmarks (Local Core i5 / Edge CPU)</text>
+      
+      <text x="20" y="55" font-family="sans-serif" font-size="11" fill="#555555">ASR Transcription: <strong style="color:#171717">0.42s</strong></text>
+      <text x="240" y="55" font-family="sans-serif" font-size="11" fill="#555555">IndicTrans2 Inference: <strong style="color:#171717">0.68s</strong></text>
+      <text x="470" y="55" font-family="sans-serif" font-size="11" fill="#555555">Piper TTS Synthesis: <strong style="color:#171717">0.18s</strong></text>
+      <text x="20" y="78" font-family="sans-serif" font-size="11" fill="#15803D">Total End-to-End Latency: ~1.28s (Zero network bandwidth required)</text>
+    </g>
+  </g>
+</svg>
+

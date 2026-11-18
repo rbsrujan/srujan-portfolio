@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F7F7F5"/>
+  <!-- Subtle border -->
+  <rect x="20" y="20" width="760" height="460" rx="8" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <rect x="20" y="20" width="760" height="44" rx="8" fill="#F0F0EE"/>
+  <circle cx="45" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="62" cy="42" r="5" fill="#D1D1CE"/>
+  <circle cx="79" cy="42" r="5" fill="#D1D1CE"/>
+  <rect x="110" y="32" width="340" height="20" rx="4" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="125" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#777777">campus-pay-omega.vercel.app/dashboard</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="64" width="160" height="416" fill="#FAFAF9" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="42" y="100" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#171717">Campus Pay</text>
+  <rect x="36" y="120" width="128" height="28" rx="4" fill="#171717"/>
+  <text x="50" y="139" font-family="sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Overview</text>
+  <text x="50" y="172" font-family="sans-serif" font-size="12" fill="#666666">QR Payments</text>
+  <text x="50" y="205" font-family="sans-serif" font-size="12" fill="#666666">Transactions</text>
+  <text x="50" y="238" font-family="sans-serif" font-size="12" fill="#666666">Role Access</text>
+
+  <!-- Main Content Area -->
+  <g transform="translate(200, 80)">
+    <!-- Balance Card -->
+    <rect width="260" height="110" rx="6" fill="#FAFAF9" stroke="#E5E5E3" stroke-width="1"/>
+    <text x="20" y="32" font-family="sans-serif" font-size="11" fill="#777777" letter-spacing="0.5">CAMPUS WALLET BALANCE</text>
+    <text x="20" y="68" font-family="sans-serif" font-size="28" font-weight="700" fill="#171717">₹2,450.00</text>
+    <text x="20" y="92" font-family="sans-serif" font-size="11" fill="#2E7D32">✓ Multi-Auth &amp; FIDO2 Protected</text>
+
+    <!-- Quick QR Card -->
+    <rect x="280" y="0" width="260" height="110" rx="6" fill="#FAFAF9" stroke="#E5E5E3" stroke-width="1"/>
+    <text x="300" y="32" font-family="sans-serif" font-size="11" fill="#777777" letter-spacing="0.5">INSTITUTION CODE</text>
+    <text x="300" y="62" font-family="sans-serif" font-size="16" font-weight="600" fill="#171717">IIITDM-KCH-STUDENT</text>
+    <rect x="300" y="74" width="120" height="24" rx="4" fill="#171717"/>
+    <text x="318" y="90" font-family="sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Generate QR</text>
+
+    <!-- Recent Transactions Table -->
+    <text x="0" y="150" font-family="sans-serif" font-size="14" font-weight="700" fill="#171717">Recent Transactions</text>
+    <rect x="0" y="165" width="540" height="200" rx="6" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1"/>
+    
+    <!-- Table Header -->
+    <rect x="0" y="165" width="540" height="32" fill="#F7F7F5" rx="6 6 0 0"/>
+    <text x="20" y="186" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">MERCHANT / DESCRIPTION</text>
+    <text x="240" y="186" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">DATE</text>
+    <text x="360" y="186" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">METHOD</text>
+    <text x="470" y="186" font-family="sans-serif" font-size="11" font-weight="600" fill="#555555">AMOUNT</text>
+
+    <!-- Row 1 -->
+    <line x1="0" y1="230" x2="540" y2="230" stroke="#EBEBEA" stroke-width="1"/>
+    <text x="20" y="218" font-family="sans-serif" font-size="12" fill="#171717">Central Cafeteria Dining</text>
+    <text x="240" y="218" font-family="sans-serif" font-size="12" fill="#666666">Today, 12:40 PM</text>
+    <text x="360" y="218" font-family="sans-serif" font-size="11" fill="#4A5548">Dynamic QR</text>
+    <text x="470" y="218" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">- ₹85.00</text>
+
+    <!-- Row 2 -->
+    <line x1="0" y1="275" x2="540" y2="275" stroke="#EBEBEA" stroke-width="1"/>
+    <text x="20" y="260" font-family="sans-serif" font-size="12" fill="#171717">Hostel Maintenance Fee</text>
+    <text x="240" y="260" font-family="sans-serif" font-size="12" fill="#666666">Yesterday</text>
+    <text x="360" y="260" font-family="sans-serif" font-size="11" fill="#4A5548">UPI / NetBank</text>
+    <text x="470" y="260" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">- ₹500.00</text>
+
+    <!-- Row 3 -->
+    <line x1="0" y1="320" x2="540" y2="320" stroke="#EBEBEA" stroke-width="1"/>
+    <text x="20" y="302" font-family="sans-serif" font-size="12" fill="#171717">Library Printing Services</text>
+    <text x="240" y="302" font-family="sans-serif" font-size="12" fill="#666666">16 Nov 2026</text>
+    <text x="360" y="302" font-family="sans-serif" font-size="11" fill="#4A5548">Dynamic QR</text>
+    <text x="470" y="302" font-family="sans-serif" font-size="12" font-weight="600" fill="#171717">- ₹30.00</text>
+  </g>
+</svg>
+
